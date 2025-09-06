@@ -1,0 +1,98 @@
+/* Estilos Gerais */
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Altura mínima para centralizar verticalmente */
+  background-color: #f4f7f6; /* Um fundo suave */
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  background-color: #ffffff; /* Fundo branco para o container */
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  text-align: center;
+  width: 90%;
+  max-width: 450px; /* Largura máxima do container */
+}
+
+h1 {
+  color: #2c3e50; /* Azul escuro para o título */
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Grupos de Entrada */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left; /* Alinha os rótulos à esquerda */
+}
+
+.input-group label {
+  display: block; /* Faz o rótulo ocupar uma linha inteira */
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input[type="number"] {
+  width: calc(100% - 20px); /* Largura total menos o padding */
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  transition: border-color 0.3s ease;
+}
+
+.input-group input[type="number"]:focus {
+  outline: none;
+  border-color: #3498db; /* Azul vibrante ao focar */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Botão de Calcular */
+#calculateBtn {
+  background-color: #3498db; /* Azul vibrante */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  width: 100%; /* Botão ocupa a largura total */
+}
+
+#calculateBtn:hover {
+  background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+  transform: translateY(-2px); /* Leve elevação */
+}
+
+#calculateBtn:active {
+  transform: translateY(0); /* Retorna ao normal ao clicar */
+}
+
+/* Área de Resultado */
+.result-area {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #eee; /* Linha separadora */
+}
+
+.result-area h2 {
+  color: #2c3e50;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#resultDisplay {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e67e22; /* Laranja para destacar o resultado */
+}
